@@ -1,0 +1,32 @@
+name: Needle # The name of the App
+options: # Some general settings for the project
+  createIntermediateGroups: true # If the folders are nested, also nest the groups in Xcode
+  bundleIdPrefix: "com.sdbt"
+packages:
+  NeedleFoundation:
+    url: https://github.com/uber/needle.git
+    from: 0.17.2
+  SnapKit:
+    url: https://github.com/SnapKit/SnapKit.git
+    from: 5.0.1
+targets: # The List of our targets
+  Needle:
+    type: application
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: Needle
+    # postCompileScripts:
+    #   - path: Scripts/swiftlint.sh
+    #     name: Run swiftlint
+    dependencies:
+      - package: NeedleFoundation
+      - package: SnapKit
+  NeedleTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: NeedleTests
+    dependencies:
+      - target: Needle
