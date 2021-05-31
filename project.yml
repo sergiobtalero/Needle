@@ -30,3 +30,33 @@ targets: # The List of our targets
       - path: NeedleTests
     dependencies:
       - target: Needle
+  Data: 
+    type: framework
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources: 
+      - path: Data
+    dependencies:
+      - target: Domain
+  DataTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: DataTests
+    dependencies:
+      - target: Data
+  Domain:
+    type: framework
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources: 
+      - path: Domain
+  DomainTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: DomainTests
+    dependencies:
+      - target: Domain
