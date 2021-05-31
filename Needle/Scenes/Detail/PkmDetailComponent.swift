@@ -12,7 +12,7 @@ protocol PkmDetailBuilder {
 
 class PkmDetailComponent: Component<PkmDetailDependency> {
     var viewModel: PkmDetailViewModelContract {
-        shared { PkmDetailViewModel(pokemon: dependency.pokemon) }
+        PkmDetailViewModel(pokemon: dependency.pokemon)
     }
 }
 

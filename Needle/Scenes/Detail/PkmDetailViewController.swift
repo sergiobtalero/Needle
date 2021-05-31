@@ -7,6 +7,7 @@ final class PkmDetailViewController: UIViewController {
     init(viewModel: PkmDetailViewModelContract) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
+        title = viewModel.pokemon.name.capitalized
     }
     
     required init?(coder: NSCoder) {
@@ -17,10 +18,5 @@ final class PkmDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        title = viewModel.pokemon.name
     }
 }

@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0541E0063BC5F1EFFFFDD640 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF70C99869E35094136621A /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13D92F64C1385D66A12486F7 /* PkmDetailComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0469842CB0C20E2299CA5 /* PkmDetailComponent.swift */; };
+		1B705739266491F900A26DB8 /* PkmListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B705738266491F900A26DB8 /* PkmListTableViewCell.swift */; };
 		1BB24DEA1E9FB3FF745B9F8B /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4B9C65F47FC70875123A53 /* UIApplication+Extensions.swift */; };
 		2045F95203D887456CD54BA5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 77B6CD5C94F73684BC8B3D9D /* SnapKit */; };
 		25355E985AA8C479E062F5DD /* PkmEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA515249206C7EC2AC509732 /* PkmEntry.swift */; };
@@ -107,6 +108,7 @@
 		14A8E888696F1179D2AD3E26 /* NeedleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedleTests.swift; sourceTree = "<group>"; };
 		179B6CD579759DBC91937AD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		19EE22409FD66143A5F9A05A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B705738266491F900A26DB8 /* PkmListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PkmListTableViewCell.swift; sourceTree = "<group>"; };
 		1DF70C99869E35094136621A /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		278E786DB3692D6A472B5A40 /* Pokedex.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Pokedex.json; sourceTree = "<group>"; };
 		2E3A3FD9EF89C2422A081CC9 /* NeedleGenerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 		06FA5947E868950F03EE797F /* List */ = {
 			isa = PBXGroup;
 			children = (
+				1B705737266491E300A26DB8 /* Views */,
 				DF69D55D8F59F29977B87294 /* PkmListViewController.swift */,
 				E5EA5F42D03D914E2B187BA3 /* Component */,
 				1C8EDE603F41A4E6FE6381DC /* Router */,
@@ -215,6 +218,14 @@
 				14A8E888696F1179D2AD3E26 /* NeedleTests.swift */,
 			);
 			path = NeedleTests;
+			sourceTree = "<group>";
+		};
+		1B705737266491E300A26DB8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B705738266491F900A26DB8 /* PkmListTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		1C8EDE603F41A4E6FE6381DC /* Router */ = {
@@ -565,8 +576,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1200;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = C52BD553F4837EAD6B2DA93A /* Build configuration list for PBXProject "Needle" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -666,6 +675,7 @@
 				56E9E743F952FCF21BFEC8BD /* PkmListComponent.swift in Sources */,
 				E489799EF269C2090645100E /* PkmListViewController.swift in Sources */,
 				A93B1F6F4042174FAAAC9FAF /* PkmListViewModel.swift in Sources */,
+				1B705739266491F900A26DB8 /* PkmListTableViewCell.swift in Sources */,
 				E4758708360483545D93CADC /* PkmListViewModelContract.swift in Sources */,
 				B85AA0659D784E35ABF3FEE9 /* SceneDelegate.swift in Sources */,
 				1BB24DEA1E9FB3FF745B9F8B /* UIApplication+Extensions.swift in Sources */,
