@@ -4,10 +4,10 @@ import SnapKit
 import UIKit
 
 final class PKMListViewController: UIViewController {
-    let viewModel: PkmListViewModel
+    let viewModel: PkmListViewModelContract
     
     // MARK: - Initializer
-    init(viewModel: PkmListViewModel) {
+    init(viewModel: PkmListViewModelContract) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: Bundle(for: type(of: self)))
         
@@ -27,17 +27,14 @@ final class PKMListViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         title = "Pokedex"
     }
-  
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
     
-    @objc func didTapButton(sender: UIButton) {
+    @objc private func didTapButton(sender: UIButton) {
         viewModel.didSelectPokemon(at: 1)
     }
 }

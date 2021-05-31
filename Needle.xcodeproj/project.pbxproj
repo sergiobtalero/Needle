@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		13D92F64C1385D66A12486F7 /* PkmDetailComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0469842CB0C20E2299CA5 /* PkmDetailComponent.swift */; };
-		1B2780C226645B50009A4FEE /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2780C126645B50009A4FEE /* UIApplication+Extensions.swift */; };
-		1B2780C426645B96009A4FEE /* PKmListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2780C326645B96009A4FEE /* PKmListRouter.swift */; };
-		1B2780C626645BB2009A4FEE /* PkmListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2780C526645BB2009A4FEE /* PkmListViewModel.swift */; };
+		1B2780C826645F47009A4FEE /* PkmDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2780C726645F47009A4FEE /* PkmDetailViewModel.swift */; };
+		1BB24DEA1E9FB3FF745B9F8B /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4B9C65F47FC70875123A53 /* UIApplication+Extensions.swift */; };
 		2045F95203D887456CD54BA5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 77B6CD5C94F73684BC8B3D9D /* SnapKit */; };
+		2BAFE89B69EBEE2FD63795AF /* PkmListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF87D3169DAF9816455767C /* PkmListViewModel.swift */; };
 		5BE871E5E7A004AD7F366461 /* PkmListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1569E6685CDD40CCC546AEEF /* PkmListComponent.swift */; };
 		5F2A6DDFE5A53C2CBA21549F /* PkmDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A00A02020FA918BB6EAC66D /* PkmDetailViewController.swift */; };
+		6540397EB840E89FC8D11DDA /* PKmListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2F8CC4C7CA884731E93C5D /* PKmListRouter.swift */; };
 		6C1CFD050BD87D40204A4651 /* NeedleFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 6F3C58FAFB35B80F0BB1B735 /* NeedleFoundation */; };
 		7EEBACD223A26A8ACCA559F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD08BA7CE454C40094292E5F /* AppDelegate.swift */; };
 		817B27C0B62A696DCC7D5154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19EE22409FD66143A5F9A05A /* LaunchScreen.storyboard */; };
@@ -41,14 +42,15 @@
 		1569E6685CDD40CCC546AEEF /* PkmListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PkmListComponent.swift; sourceTree = "<group>"; };
 		179B6CD579759DBC91937AD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		19EE22409FD66143A5F9A05A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1B2780C126645B50009A4FEE /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
-		1B2780C326645B96009A4FEE /* PKmListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKmListRouter.swift; sourceTree = "<group>"; };
-		1B2780C526645BB2009A4FEE /* PkmListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PkmListViewModel.swift; sourceTree = "<group>"; };
+		1B2780C726645F47009A4FEE /* PkmDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PkmDetailViewModel.swift; sourceTree = "<group>"; };
 		2E3A3FD9EF89C2422A081CC9 /* NeedleGenerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		3716518356DDC96675A8C583 /* Needle.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Needle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A00A02020FA918BB6EAC66D /* PkmDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PkmDetailViewController.swift; sourceTree = "<group>"; };
+		3CF87D3169DAF9816455767C /* PkmListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PkmListViewModel.swift; sourceTree = "<group>"; };
+		5A4B9C65F47FC70875123A53 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		6520C8856788178A14716ED9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EE0469842CB0C20E2299CA5 /* PkmDetailComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PkmDetailComponent.swift; sourceTree = "<group>"; };
+		9D2F8CC4C7CA884731E93C5D /* PKmListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKmListRouter.swift; sourceTree = "<group>"; };
 		B51FDB5CAFCF19AFF3A59D67 /* NeedleTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = NeedleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD08BA7CE454C40094292E5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF69D55D8F59F29977B87294 /* PkmListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PkmListViewController.swift; sourceTree = "<group>"; };
@@ -71,9 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				1569E6685CDD40CCC546AEEF /* PkmListComponent.swift */,
+				9D2F8CC4C7CA884731E93C5D /* PKmListRouter.swift */,
 				DF69D55D8F59F29977B87294 /* PkmListViewController.swift */,
-				1B2780C526645BB2009A4FEE /* PkmListViewModel.swift */,
-				1B2780C326645B96009A4FEE /* PKmListRouter.swift */,
+				3CF87D3169DAF9816455767C /* PkmListViewModel.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -96,14 +98,6 @@
 			path = NeedleTests;
 			sourceTree = "<group>";
 		};
-		1B2780C026645B3F009A4FEE /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				1B2780C126645B50009A4FEE /* UIApplication+Extensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		28A92560D01FC89677AAC7D5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +110,7 @@
 		36A319DAB90BF36B4229080F = {
 			isa = PBXGroup;
 			children = (
+				1B2780C726645F47009A4FEE /* PkmDetailViewModel.swift */,
 				CBC311A3D7236D6C368DC071 /* Needle */,
 				19B0BA8066C03864298320C0 /* NeedleTests */,
 				5E63216AFF93C3BD8087791C /* Products */,
@@ -148,14 +143,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		AD95FBE1D4824D06BCD0DF7F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A4B9C65F47FC70875123A53 /* UIApplication+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CBC311A3D7236D6C368DC071 /* Needle */ = {
 			isa = PBXGroup;
 			children = (
-				1B2780C026645B3F009A4FEE /* Extensions */,
 				19EE22409FD66143A5F9A05A /* LaunchScreen.storyboard */,
 				2E3A3FD9EF89C2422A081CC9 /* NeedleGenerated.swift */,
 				28A92560D01FC89677AAC7D5 /* Base */,
 				D1382B2C8023111822DE111E /* Config */,
+				AD95FBE1D4824D06BCD0DF7F /* Extensions */,
 				A30FBA0476136E7C9E35847E /* Resources */,
 				14086733F3E9CC1F883FDCB7 /* Scenes */,
 			);
@@ -267,14 +270,15 @@
 			files = (
 				7EEBACD223A26A8ACCA559F4 /* AppDelegate.swift in Sources */,
 				FBA929E980DEB0A6DC395759 /* NeedleGenerated.swift in Sources */,
-				1B2780C426645B96009A4FEE /* PKmListRouter.swift in Sources */,
+				6540397EB840E89FC8D11DDA /* PKmListRouter.swift in Sources */,
 				13D92F64C1385D66A12486F7 /* PkmDetailComponent.swift in Sources */,
 				5F2A6DDFE5A53C2CBA21549F /* PkmDetailViewController.swift in Sources */,
 				5BE871E5E7A004AD7F366461 /* PkmListComponent.swift in Sources */,
 				E489799EF269C2090645100E /* PkmListViewController.swift in Sources */,
-				1B2780C226645B50009A4FEE /* UIApplication+Extensions.swift in Sources */,
+				2BAFE89B69EBEE2FD63795AF /* PkmListViewModel.swift in Sources */,
 				B85AA0659D784E35ABF3FEE9 /* SceneDelegate.swift in Sources */,
-				1B2780C626645BB2009A4FEE /* PkmListViewModel.swift in Sources */,
+				1B2780C826645F47009A4FEE /* PkmDetailViewModel.swift in Sources */,
+				1BB24DEA1E9FB3FF745B9F8B /* UIApplication+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

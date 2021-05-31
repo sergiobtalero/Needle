@@ -1,23 +1,22 @@
-//
-//  PkmListViewModel.swift
-//  Needle
-//
-//  Created by Sergio Bravo on 30/05/21.
-//
-
-import Foundation
+protocol PkmListViewModelContract {
+    var selectedPokemon: Pokemon? { get }
+    func didSelectPokemon(at row: Int)
+}
 
 final class PkmListViewModel {
-    let router: PkmListRouter
+    let router: PkmListRouterContract
     var pokemonList: [Pokemon] = [Pokemon(name: "Bulbasaur"),
                                   Pokemon(name: "Squirtle"),
                                   Pokemon(name: "Charmander")]
-    var selectedPokemon: Pokemon?
+    private(set) var selectedPokemon: Pokemon?
     
-    init(router: PkmListRouter) {
+    init(router: PkmListRouterContract) {
         self.router = router
     }
-    
+}
+
+// MARK: - PkmListViewModelContract
+extension PkmListViewModel: PkmListViewModelContract {
     func didSelectPokemon(at row: Int) {
         selectedPokemon = pokemonList[row]
         router.showDetail()

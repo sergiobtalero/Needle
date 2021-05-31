@@ -6,11 +6,11 @@ class PkmListComponent: BootstrapComponent {
         viewModel.selectedPokemon ?? Pokemon(name: "none")
     }
     
-    var router: PkmListRouter {
+    var router: PkmListRouterContract {
         PkmListRouter(pkmDetailBuilder: pkmDetailComponent)
     }
     
-    var viewModel: PkmListViewModel {
+    var viewModel: PkmListViewModelContract {
         shared { PkmListViewModel(router: router) }
     }
     

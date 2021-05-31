@@ -9,9 +9,15 @@ protocol PkmDetailBuilder {
     var viewController: UIViewController { get }
 }
 
-class PkmDetailComponent: Component<PkmDetailDependency>, PkmDetailBuilder {
+class PkmDetailComponent: Component<PkmDetailDependency> {
+    var viewModel: PkmDetailViewModelContract {
+        shared { PkmDetailViewModel(pokemon: dependency.pokemon) }
+    }
+}
+
+// MARK: - PkmDetailBuilder
+extension PkmDetailComponent: PkmDetailBuilder {
     var viewController: UIViewController {
-        let viewModel = PkmDetailViewModel(pokemon: dependency.pokemon)
         return PkmDetailViewController(viewModel: viewModel)
     }
 }
