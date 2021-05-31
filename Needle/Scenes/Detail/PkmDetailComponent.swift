@@ -1,8 +1,9 @@
 import NeedleFoundation
+import Domain
 import UIKit
 
 protocol PkmDetailDependency: Dependency {
-    var pokemon: Pokemon { get }
+    var pokemon: PkmEntry { get }
 }
 
 protocol PkmDetailBuilder {

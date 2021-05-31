@@ -1,26 +1,24 @@
-import NeedleFoundation
 import Combine
+import Domain
 import SnapKit
 import UIKit
 
+enum PkmListViewState {
+    case notStarted
+    case loading
+    case render(Pokedex)
+    case error
+}
+
 final class PKMListViewController: UIViewController {
-    let viewModel: PkmListViewModelContract
+    private let viewModel: PkmListViewModelContract
+    private var subscriptions = Set<AnyCancellable>()
     
     // MARK: - Initializer
     init(viewModel: PkmListViewModelContract) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: Bundle(for: type(of: self)))
-        
-        let showButton = UIButton()
-        showButton.addTarget(self,
-                             action: #selector(didTapButton(sender:)),
-                             for: .touchUpInside)
-        showButton.setTitle("Show Pkm", for: .normal)
-        showButton.setTitleColor(.systemBlue, for: .normal)
-        view.addSubview(showButton)
-        showButton.snp.makeConstraints { make in
-            make.center.equalToSuperview()
-        }
+        setupSubscriptions()
     }
 
     required init?(coder: NSCoder) {
@@ -36,5 +34,18 @@ final class PKMListViewController: UIViewController {
     
     @objc private func didTapButton(sender: UIButton) {
         viewModel.didSelectPokemon(at: 1)
+    }
+}
+
+private extension PKMListViewController {
+    func setupSubscriptions() {
+        let input = PkmListInput()
+        let output = viewModel.buildOutput(input: input)
+        
+        output.state
+            .sink { state in
+                print(state)
+            }
+            .store(in: &subscriptions)
     }
 }

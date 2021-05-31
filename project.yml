@@ -9,6 +9,9 @@ packages:
   SnapKit:
     url: https://github.com/SnapKit/SnapKit.git
     from: 5.0.1
+  Alamofire: 
+    url: https://github.com/Alamofire/Alamofire.git
+    from: 5.4.3
 targets: # The List of our targets
   Needle:
     type: application
@@ -38,6 +41,7 @@ targets: # The List of our targets
       - path: Data
     dependencies:
       - target: Domain
+      - package: Alamofire
   DataTests:
     type: bundle.unit-test
     platform: iOS

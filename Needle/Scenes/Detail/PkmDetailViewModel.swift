@@ -1,15 +1,13 @@
-struct Pokemon {
-    let name: String
-}
+import Domain
 
 protocol PkmDetailViewModelContract {
-    var pokemon: Pokemon { get }
+    var pokemon: PkmEntry { get }
 }
 
 final class PkmDetailViewModel {
-    let pokemon: Pokemon
+    let pokemon: PkmEntry
     
-    init(pokemon: Pokemon) {
+    init(pokemon: PkmEntry) {
         self.pokemon = pokemon
     }
 }

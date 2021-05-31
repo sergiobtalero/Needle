@@ -1,5 +1,7 @@
 
 
+import Data
+import Domain
 import NeedleFoundation
 import UIKit
 
@@ -21,7 +23,7 @@ public func registerProviderFactories() {
 // MARK: - Providers
 
 private class PkmDetailDependency8532e147c84800412061BaseProvider: PkmDetailDependency {
-    var pokemon: Pokemon {
+    var pokemon: PkmEntry {
         return pkmListComponent.pokemon
     }
     private let pkmListComponent: PkmListComponent
